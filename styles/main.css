@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     background-color: white;
     box-shadow: 3px 3px 10px 2px grey;
+    width: 100%;
 
 
 }
@@ -232,4 +233,55 @@ footer p {
     font-size: 85%;
     font-weight: solid;
     font-variant: small-caps;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+/*-----------MEDIA QUIRIES-----------*/
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section, #nav_list, #asideright {
+        max-width: 95%;
+    }
+
+    #nav_list {
+        order: 2;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 479) {
+
+    header {
+        flex-direction: column;
+    }
+
 }
